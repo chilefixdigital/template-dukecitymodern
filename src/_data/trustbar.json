@@ -1,7 +1,12 @@
 {
   "items": [
-    { "number": "15+", "label": "Years Local" },
-    { "number": "4.9/5", "label": "Rating" },
-    { "number": "2.4k", "label": "Homes Served" }
+    {
+      "number": "1100+",
+      "label": "Customers Served"
+    },
+    {
+      "number": "4.5/5",
+      "label": "Rating"
+    }
   ]
 }

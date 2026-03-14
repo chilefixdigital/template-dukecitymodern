@@ -1,15 +1,12 @@
-// Static site config — contact info and hours are managed via the CMS (src/_data/*.json)
 module.exports = {
-    name: "Your Business Name",
-    foundingYear: "2020",
-    license: "",
-    socials: {
-        facebook: "#",
-        instagram: "#",
-        google: "#",
-    },
-    //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-    domain: "https://yourbusiness.com",
-    // Passing the isProduction variable for use in HTML templates
-    isProduction: process.env.ELEVENTY_ENV === "PROD",
+  name: "Duran's Station",
+  foundingYear: "",
+  license: "",
+  socials: {
+    facebook: "https://www.facebook.com/groups/albuquerquefoodies/posts/1564826538042099/",
+    instagram: "https://www.instagram.com/p/DQZpejmjzA_/",
+    google: "https://g.page/r/ChIJC8ub4cx0IocRsH1GeXEEWzo",
+    yelp: "https://www.yelp.com/biz/durans-station-albuquerque",
+  },
+  domain: "",
 };

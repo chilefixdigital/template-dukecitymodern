@@ -1,0 +1,94 @@
+{
+  "client.name": {
+    "value": "Duran's Station",
+    "source": "google-places"
+  },
+  "client.foundingYear": {
+    "value": "",
+    "source": "https://duransstation.com"
+  },
+  "client.domain": {
+    "value": "",
+    "source": "https://duransstation.com"
+  },
+  "client.socials.facebook": {
+    "value": "https://www.facebook.com/groups/albuquerquefoodies/posts/1564826538042099/",
+    "source": "serper"
+  },
+  "client.socials.instagram": {
+    "value": "https://www.instagram.com/p/DQZpejmjzA_/",
+    "source": "serper"
+  },
+  "client.socials.google": {
+    "value": "https://g.page/r/ChIJC8ub4cx0IocRsH1GeXEEWzo",
+    "source": "google-places"
+  },
+  "client.socials.yelp": {
+    "value": "https://www.yelp.com/biz/durans-station-albuquerque",
+    "source": "serper"
+  },
+  "contact.email": {
+    "value": "",
+    "source": "https://duransstation.com"
+  },
+  "contact.phoneForTel": {
+    "value": "505-830-0007",
+    "source": "google-places"
+  },
+  "location.address": {
+    "value": "4201 Menaul Boulevard Northeast",
+    "source": "google-places"
+  },
+  "location.city": {
+    "value": "Albuquerque",
+    "source": "google-places"
+  },
+  "location.state": {
+    "value": "NM",
+    "source": "google-places"
+  },
+  "location.zip": {
+    "value": "87110",
+    "source": "google-places"
+  },
+  "location.country": {
+    "value": "US",
+    "source": "google-places"
+  },
+  "location.mapLink": {
+    "value": "https://maps.google.com/?cid=4204959562492968368",
+    "source": "google-places"
+  },
+  "hours.hoursWeekdays": {
+    "value": "Monday: 11:00 AM – 7:30 PM | Tuesday: 11:00 AM – 7:30 PM | Wednesday: 11:00 AM – 7:30 PM | Thursday: 11:00 AM – 7:30 PM | Friday: 11:00 AM – 7:30 PM",
+    "source": "google-places"
+  },
+  "hours.hoursWeekend": {
+    "value": "Saturday: 11:00 AM – 7:30 PM | Sunday: Closed",
+    "source": "google-places"
+  },
+  "hero.heroImage": {
+    "value": "/api/place-photo?ref=ATCDNfVhi_O5JYk-ue2fNFU-6tocNaCzYsX5XPgUhr4cwOykiTJe5j0-gbOdKDWrcrjOIbLb0gklKXjbjdILwhAR3W428Iy7-zJTS_2cpezOJZNTiVWB-athjPgTFtgsn1mdJFTaYwcF6nMfeu5zCiP6P3UYojhtSstYRT8Zd2TPVPuTMDIvXQZLNYTpWiPu8x_f5C6BC1NdObjb-fid3mR3RWOewrZfrOW1BzQED9UNyUuqks1J9kGXwKwk696hcRvlR2InScnXhgsPGU6yC8SK5AJtZCVumMEpQPTKe-_UFqlLf_oq9Gvu-OXcwYeOjsCjFMVbO1oaboou3cTFPY7xBUiDg5rnRRATgKLEqpYSZx0PFwluj2NWxvz7vDAyO1zpQpHeVBjctFBltsUI5WT1_fDXwsKg_lhNu_saZfIhu177jg",
+    "source": "google-places"
+  },
+  "hero.heroTagline": {
+    "value": "Authentic New Mexican Flavors in Albuquerque",
+    "source": "copy_agent"
+  },
+  "hero.heroSubtitle": {
+    "value": "Step into a vibrant culinary journey, where generations of recipes meet the freshest local produce, creating an unforgettable taste of New Mexico.",
+    "source": "qa_fix"
+  },
+  "alert.text": {
+    "value": "",
+    "source": "unknown"
+  },
+  "brand.primaryColor": {
+    "value": "#1a6b4a",
+    "source": "default"
+  },
+  "_aboutBody": {
+    "value": "Duran's Station has been a beloved fixture in the Albuquerque community, serving up the authentic tastes of New Mexico. We pride ourselves on creating a welcoming atmosphere where friends and family can gather to enjoy classic dishes and make lasting memories.",
+    "source": "copy_agent"
+  }
+}
