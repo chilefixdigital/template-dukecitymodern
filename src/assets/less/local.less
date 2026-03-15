@@ -17,7 +17,7 @@
             width: 100%;
             top: 0;
             z-index: 1000;
-            background: rgba(34, 22, 16, 0.95);
+            background: color-mix(in srgb, var(--dark) 95%, transparent);
             backdrop-filter: blur(10px);
             padding: 1.2rem 0;
             animation: slideDown 0.6s ease-out;
@@ -129,8 +129,8 @@
             right: 0;
             bottom: 0;
             background:
-                radial-gradient(circle at 20% 50%, rgba(236, 91, 19, 0.12) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(236, 91, 19, 0.07) 0%, transparent 50%);
+                radial-gradient(circle at 20% 50%, color-mix(in srgb, var(--primary) 12%, transparent) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, color-mix(in srgb, var(--primary) 7%, transparent) 0%, transparent 50%);
             animation: pulse 8s ease-in-out infinite;
         }
 
@@ -217,13 +217,13 @@
             font-weight: 600;
             font-size: 1rem;
             transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease, background-color 0.2s ease;
-            box-shadow: 0 6px 20px rgba(236, 91, 19, 0.3);
+            box-shadow: 0 6px 20px color-mix(in srgb, var(--secondary) 30%, transparent);
             display: inline-block;
         }
 
         .btn-primary:hover {
             transform: translateY(-2px) scale(1.02);
-            box-shadow: 0 10px 30px rgba(236, 91, 19, 0.4);
+            box-shadow: 0 10px 30px color-mix(in srgb, var(--secondary) 40%, transparent);
             background-color: var(--secondaryLight);
         }
 
@@ -338,7 +338,7 @@
         .services {
             padding: 8rem 2rem;
             background:
-                radial-gradient(ellipse at 20% -10%, rgba(236, 91, 19, 0.04) 0%, transparent 50%),
+                radial-gradient(ellipse at 20% -10%, color-mix(in srgb, var(--primary) 4%, transparent) 0%, transparent 50%),
                 var(--off-white);
         }
 
@@ -416,7 +416,7 @@
         }
 
         .service-card p {
-            color: #666;
+            color: var(--silver);
             line-height: 1.7;
         }
 
@@ -442,7 +442,7 @@
         }
 
         .service-card.tint-removal:hover p {
-            color: #666;
+            color: var(--silver);
         }
 
         .services-cta {
@@ -459,7 +459,7 @@
         .testimonials {
             padding: 8rem 2rem;
             background:
-                radial-gradient(ellipse at 80% -10%, rgba(236, 91, 19, 0.04) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% -10%, color-mix(in srgb, var(--primary) 4%, transparent) 0%, transparent 50%),
                 var(--cream);
             position: relative;
             overflow: hidden;
@@ -517,7 +517,7 @@
         .testimonial-text {
             font-size: 1.1rem;
             line-height: 1.8;
-            color: #333;
+            color: var(--bodyTextColor);
             margin-bottom: 2rem;
             font-style: italic;
             display: -webkit-box;
@@ -531,7 +531,7 @@
             align-items: center;
             justify-content: space-between;
             padding-top: 1.5rem;
-            border-top: 2px solid #f0f0f0;
+            border-top: 2px solid var(--cream);
             margin-top: auto;
         }
 
@@ -564,7 +564,7 @@
         }
 
         .author-details p {
-            color: #666;
+            color: var(--silver);
             font-size: 0.9rem;
         }
 
@@ -573,7 +573,7 @@
             align-items: center;
             gap: 0.5rem;
             padding: 0.5rem 1rem;
-            background: rgba(236, 91, 19, 0.07);
+            background: color-mix(in srgb, var(--primary) 7%, transparent);
             border-radius: 20px;
             font-weight: 600;
             font-size: 0.9rem;
@@ -624,7 +624,7 @@
             width: 12px;
             height: 12px;
             border-radius: 50%;
-            background: #d0d0d0;
+            background: var(--silver);
             cursor: pointer;
             transition: all 0.3s ease;
         }
@@ -650,7 +650,7 @@
             right: 0;
             width: 50%;
             height: 100%;
-            background: linear-gradient(135deg, transparent, rgba(236, 91, 19, 0.05));
+            background: linear-gradient(135deg, transparent, color-mix(in srgb, var(--primary) 5%, transparent));
         }
 
         .why-content {
@@ -1389,7 +1389,7 @@
 <--- -------------------------- -*/
 
 #cs-navigation {
-    background: rgba(34, 22, 16, 0.97);
+    background: color-mix(in srgb, var(--dark) 97%, transparent);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 
