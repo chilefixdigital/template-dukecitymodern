@@ -37,10 +37,12 @@
                         <span class="site-footer-icon">📞</span>
                         <a href="tel:{{ contact.phoneForTel }}">{{ contact.phoneForTel | formatPhone }}</a>
                     </div>
+                    {% if contact.email %}
                     <div class="site-footer-contact-item">
                         <span class="site-footer-icon">✉️</span>
                         <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
                     </div>
+                    {% endif %}
                     <div class="site-footer-contact-item">
                         <span class="site-footer-icon">📍</span>
                         <a href="{{ location.mapLink }}" target="_blank" rel="noopener">
