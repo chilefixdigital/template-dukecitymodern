@@ -19,7 +19,8 @@ tags: "sitemap"
 
 {% block body %}
 
-    {% set isRestaurant = client.industry and (client.industry | contains("restaurant")) and menu and menu.categories %}
+    {% set isRestaurant = client.industry and (client.industry | contains("restaurant")) %}
+    {% set hasMenu = menu and menu.categories %}
 
     <!-- ============================================ -->
     <!--                    Hero                      -->
@@ -30,8 +31,10 @@ tags: "sitemap"
                 <h1 class="hero-h1">{{ hero.heroTagline }}</h1>
                 <p class="hero-subtitle">{{ hero.heroSubtitle }}</p>
                 <div class="hero-cta">
-                    {% if isRestaurant %}
+                    {% if isRestaurant and hasMenu %}
                     <a href="#menu" class="btn-primary">View Our Menu</a>
+                    {% elif isRestaurant %}
+                    <a href="#services" class="btn-primary">See What We Serve</a>
                     {% else %}
                     <a href="#quote-form" class="btn-primary">Get Your Free Quote</a>
                     {% endif %}
@@ -66,14 +69,19 @@ tags: "sitemap"
     <!-- ============================================ -->
     <!--           Services / Menu Highlights          -->
     <!-- ============================================ -->
-    {% if isRestaurant %}
+    {% if isRestaurant and hasMenu %}
     {% include "sections/menu-highlights.njk" %}
     {% include "sections/menu-full.njk" %}
     {% else %}
     <section class="services" id="services">
         <div class="section-header">
+            {% if isRestaurant %}
+            <div class="section-label">Our Kitchen</div>
+            <h2 class="section-title">What We Serve</h2>
+            {% else %}
             <div class="section-label">What We Offer</div>
             <h2 class="section-title">Our Services</h2>
+            {% endif %}
         </div>
         <div class="services-grid">
             {% for service in collections.service | sort(false, false, 'data.order') %}
@@ -110,9 +118,11 @@ tags: "sitemap"
             </div>
             {% endfor %}
         </div>
+        {% if not isRestaurant %}
         <div class="services-cta">
             <a href="#quote-form" class="btn-primary">Get Your Free Quote Today</a>
         </div>
+        {% endif %}
     </section>
     {% endif %}
 
