@@ -120,3 +120,24 @@ document.addEventListener("DOMContentLoaded", () => {
     initServiceImageHover();
     initMobileImageToggle();
 });
+
+// Collapsible menu categories
+document.querySelectorAll('.collapsible .menu-category-title').forEach(function(title) {
+    title.addEventListener('click', function() {
+        var cat = this.closest('.menu-category');
+        var items = cat.querySelector('.menu-items');
+        var isOpen = cat.classList.contains('open');
+        if (isOpen) {
+            cat.classList.remove('open');
+            items.classList.add('collapsed');
+            this.setAttribute('aria-expanded', 'false');
+        } else {
+            cat.classList.add('open');
+            items.classList.remove('collapsed');
+            this.setAttribute('aria-expanded', 'true');
+        }
+    });
+    title.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); this.click(); }
+    });
+});

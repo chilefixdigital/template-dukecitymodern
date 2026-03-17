@@ -218,3 +218,43 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* Collapsible menu categories */
+.menu-category-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collapsible .menu-category-title {
+    cursor: pointer;
+    user-select: none;
+}
+
+.menu-toggle-icon {
+    display: inline-block;
+    width: 0.6em;
+    height: 0.6em;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+    margin-left: 0.5em;
+    flex-shrink: 0;
+}
+
+.collapsible.open .menu-toggle-icon {
+    transform: rotate(-135deg);
+}
+
+.menu-items.collapsed {
+    display: none;
+}
+
+.menu-item-desc {
+    display: block;
+    font-size: 0.85em;
+    color: var(--bodyTextColor);
+    opacity: 0.7;
+    margin-top: 0.15em;
+}
