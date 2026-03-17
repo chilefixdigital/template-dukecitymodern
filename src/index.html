@@ -182,47 +182,17 @@ tags: "sitemap"
     </section>
 
     <!-- ============================================ -->
-    <!--               Why Choose Us                  -->
+    <!--                  About Us                     -->
     <!-- ============================================ -->
+    {% if about and about.text %}
     {% set yearsInBusiness = client.foundingYear | yearsAgo %}
-    <section class="why-choose" id="why-choose">
-        <div class="why-content">
-            <div class="why-text">
-                <h2>Why Choose <span class="cs-logo-name">{{ client.name }}</span>?</h2>
-                <ul class="features-list">
-                    {% if yearsInBusiness >= 5 %}
-                    <li class="feature-item">
-                        <div class="feature-icon">&#10003;</div>
-                        <div class="feature-content">
-                            <h4><span id="years-experience">{{ yearsInBusiness }}</span> Years of Excellence</h4>
-                            <p>Since {{ client.foundingYear }}, we've been {{ location.city }}'s trusted local experts, delivering quality service and exceptional results.</p>
-                        </div>
-                    </li>
-                    {% endif %}
-                    <li class="feature-item">
-                        <div class="feature-icon">&#10003;</div>
-                        <div class="feature-content">
-                            <h4>Licensed &amp; Insured</h4>
-                            <p>Fully licensed and insured for your peace of mind. We meet all local and state requirements.</p>
-                        </div>
-                    </li>
-                    <li class="feature-item">
-                        <div class="feature-icon">&#10003;</div>
-                        <div class="feature-content">
-                            <h4>Satisfaction Guaranteed</h4>
-                            <p>We stand behind our work. Your satisfaction is our top priority on every job.</p>
-                        </div>
-                    </li>
-                    <li class="feature-item">
-                        <div class="feature-icon">&#10003;</div>
-                        <div class="feature-content">
-                            <h4>Community Focused</h4>
-                            <p>Proudly serving {{ location.city }} and surrounding communities. Local business, local values.</p>
-                        </div>
-                    </li>
-                </ul>
+    <section class="about-section" id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About <span class="cs-logo-name">{{ client.name }}</span></h2>
+                <p>{{ about.text | safe }}</p>
             </div>
-            <div class="stats-grid">
+            <div class="about-stats">
                 {% if yearsInBusiness >= 5 %}
                 <div class="stat-box">
                     <div class="stat-number" id="years-in-business">{{ yearsInBusiness }}</div>
@@ -234,16 +204,13 @@ tags: "sitemap"
                     <div class="stat-label">Rating</div>
                 </div>
                 <div class="stat-box">
-                    <div class="stat-number">100%</div>
-                    <div class="stat-label">Satisfaction</div>
-                </div>
-                <div class="stat-box">
                     <div class="stat-number">Local</div>
                     <div class="stat-label">Owned &amp; Operated</div>
                 </div>
             </div>
         </div>
     </section>
+    {% endif %}
 
     <!-- ============================================ -->
     <!--           Quote Form / Order CTA             -->
