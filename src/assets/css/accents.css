@@ -1,0 +1,22 @@
+/* ===== Accent Style Variants ===== */
+/* Applied via data-accent attribute on <body> */
+
+[data-accent="border"] {
+  & .review-card { border-left: 3px solid var(--accent); }
+  & .faq-item { border-left: 3px solid var(--accent); padding-left: 1rem; }
+  & .about-section { border-left: 3px solid var(--accent); }
+}
+
+[data-accent="underline"] {
+  & .section-heading {
+    text-decoration-line: underline;
+    text-decoration-color: var(--accent);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 0.3em;
+  }
+}
+
+[data-accent="tint"] {
+  & .review-card { background: color-mix(in srgb, var(--accent) 5%, white); }
+  & .faq-item[open] { background: color-mix(in srgb, var(--accent) 8%, white); padding: 0 1rem; }
+}
